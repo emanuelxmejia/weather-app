@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Weather App by Emanuel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <button class="toggle">
+                <span class="toggle__span">
+                    <i class="fas fa-sun"></i>
+                </span>
+                <span class="toggle__span">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+        </div>
+        <div class="card">
+            <i class="fas fa-circle-notch fa-spin icon icon--size" id="loader"></i>
+            <div class="card__body hidden">
+                <div class="row">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <p class="text text--md" id="weather-location"></p>
+                </div>
+                <div class="row">
+                    <img src="" class="card__img" id="weather-icon">
+                    <p class="text text--lg text--m text--color-blue" id="weather-temperature">°c</p>
+                </div>
+                <p class="text text--capitalize" id="weather-description"></p>
+                <p class="text text--small text--mt text--color-blue" id="weather-minmax"></p>
+            </div>
+        </div>
+        <input type="text" class="input" placeholder="Your city name">
+        <p class="alert hidden">City not found, sorry</p>
+    </div>
+</body>
+</html>
